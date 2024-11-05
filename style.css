@@ -1,0 +1,35 @@
+/* styles.css */
+
+body {
+    background-color: black; /* Default background color */
+    color: white; /* Default text color */
+    font-family: Arial, sans-serif; /* Optional font */
+}
+
+.login-box {
+    background-color: rgba(30, 30, 30, 0.8); /* Dark gray with transparency */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding */
+}
+
+.btn {
+    background-color: #007bff; /* Bootstrap primary button color */
+    color: white; /* Button text color */
+}
+
+#toggleTheme {
+    background-color: white; /* White background for toggle button */
+    color: black; /* Black text for toggle button */
+}
+
+/* Class for white background */
+.white-theme {
+    background-color: white; /* Background color white */
+    color: black; /* Text color black */
+}
+
+/* Class for dark background */
+.black-theme {
+    background-color: black; /* Background color black */
+    color: white; /* Text color white */
+}

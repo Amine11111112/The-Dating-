@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating Chat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dating_chat.css">
+</head>
+<body>
+    <div class="container-fluid vh-100 d-flex flex-column">
+        <!-- Chat Header -->
+        <div class="chat-header bg-danger text-white p-3">
+            <h5>Chat with [Your friend]</h5>
+        </div>
+
+        <!-- Chat Body -->
+        <div class="chat-body flex-grow-1 p-3 overflow-auto" id="chatBody">
+            <!-- Example Messages with Profile Pictures -->
+            <div class="message received d-flex align-items-start">
+                <img src="profile1.jpg" alt="Profile" class="profile-img">
+                <div class="message-content bg-light p-2 rounded ml-2">
+                    <p>Hi! How are you? 😊</p>
+                </div>
+                <span class="message-time text-muted ml-2">10:12 AM</span>
+            </div>
+            <div class="message sent d-flex align-items-start justify-content-end">
+                <div class="message-content bg-danger text-white p-2 rounded mr-2">
+                    <p>I'm great! And you?</p>
+                </div>
+                <img src="profile2.jpg" alt="Profile" class="profile-img">
+                <span class="message-time text-muted mr-2">10:13 AM</span>
+            </div>
+        </div>
+
+        <!-- Chat Footer -->
+        <div class="chat-footer bg-light p-2">
+            <form id="chatForm" class="d-flex">
+                <input type="text" id="messageInput" class="form-control mr-2" placeholder="Type a message..." required>
+                <button class="btn btn-danger" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="dating_chat.js"></script>
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- تأكد من وجود هذا الرابط -->
+</head>

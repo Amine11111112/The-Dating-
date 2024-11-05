@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Login Page Container -->
+    <div id="loginPage" class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="col-md-4">
+            <div class="login-box p-4">
+                <h3 class="text-center mb-4">Login</h3>
+                <form id="loginForm">
+                    <!-- Username Input -->
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" class="form-control" required>
+                    </div>
+                    <!-- Password Input -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-control" required>
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toggle Theme Button -->
+    <button id="toggleTheme" class="btn btn-light position-fixed" style="top: 20px; left: 20px;">Toggle Theme</button>
+
+    <!-- JavaScript Files -->
+    <script src="login.js"></script>
+    <script src="toggleTheme.js"></script>
+    
+    <script>
+        // JavaScript for handling form submission
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            // Redirect to messages page (change 'messages.html' to your actual messages page)
+            window.location.href = 'messages.html';
+        });
+    </script>
+
+</body>
+</html>
+<button class="rules-button" onclick="toggleRules()">View Rules</button>
+        </div>
+        <div id="rules" class="rules-box hidden">
+            <h3>Site Rules:</h3>
+            <ul>
+                <li>It is forbidden to publish a site outside the school.</li>
+                <li>It is forbidden to search for the founder of the site</li>
+                <li> ممنوع دخول رشيد للموقع.</li>
+                <li>Respect others, and enjoy!</li>
+                <li>No swearing or cursing</li>
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
